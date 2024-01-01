@@ -2,7 +2,7 @@ import { redirect } from "react-router-dom";
 import { deleteContact } from "../contacts";
 
 export async function action({params}){
-    throw new Error("oh snap!")
+    // throw new Error("oh snap!")
     await deleteContact(params.contactId)
     return redirect("/")
 }
